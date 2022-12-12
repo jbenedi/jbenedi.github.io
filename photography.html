@@ -1,1 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-Frame-Options" content="deny">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" type="text/javascript"></script>
+	<script src="https://jbenedict.org/assets/demos.js"></script>
+	<meta charset="UTF-8">
+	<title>jbenedict.org</title>
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta name="description" content="James - Lighting Designer, Coder, Techie" />
+	<style>
+    html {
+		overflow: overlay;
+		scroll-behavior: smooth;
+		background-color: #1e1e1e;
+}
+	
+*::-webkit-scrollbar {
+		width: 10px;
+}
+	
+*::-webkit-scrollbar-track {
+		opacity: 1;
+}
+	
+*::-webkit-scrollbar-thumb {
+		background-color: #888;
+		border-radius: 0.5rem;
+}
+	
+*::-webkit-scrollbar-thumb:hover {
+		background-color: #575757;
+}
+	
+.graybackground {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 100px;
+}
+	
+.socials {
+		position: relative;
+		top: 35px;
+		display: table;
+		text-align: center;
+		margin: auto;
+		padding-bottom: 15px;
+}
+	
+.discord {
+		position: relative;
+		bottom: 175px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		width: 30%;
+		width: 250px;
+		max-width: 410px;
+		height: 90px;
+		border-radius: 500px;
+}
+	
+.header{z-index:2;width:100%;position:fixed;top:0;left:0;padding:1.5rem;display:flex;background:#262626;background:0 0;border-bottom:rgba(255,255,255,.1) 1px solid;background-color:rgba(38,38,38,.9)}@supports (backdrop-filter:blur(15px)){.header{z-index:2;width:100%;position:fixed;top:0;left:0;padding:1.5rem;display:flex;background:#262626;background:0 0;border-bottom:rgba(255,255,255,.1) 1px solid;backdrop-filter:blur(15px)}}.navbar-nav{font-family:Comfortaa;font-size:20px;padding:15px;padding-left:1%;padding-right:1%;transition:all .1s linear}.navbar-button{color:#969696;text-decoration:none}.navbar-nav:hover{filter:drop-shadow(0 0 7px rgba(255, 255, 255, .35));transform:scale(1.075) rotate(1deg)}.navbar-nav:active{transform:scale(.95)}.logo{animation-name:logo-animation;animation-duration:2s;animation-iteration-count:infinite;transform-origin:50% 50%;display:inline-block;transform:scale(1);transition:all .2s linear;padding-right:2%;padding-left:2%}.logo:hover{animation-name:logo-animation;animation-duration:2s;animation-iteration-count:infinite;filter:drop-shadow(0 0 7px rgba(255, 255, 255, .35))}.logo:active{animation-name:logo-animation;animation-duration:2s;animation-iteration-count:infinite;filter:drop-shadow(0 0 7px rgba(255, 255, 255, .2))}@keyframes logo-animation{0%{transform:rotate(3deg)}50%{transform:rotate(-3deg)}100%{transform:rotate(3deg)}}.socials{position:relative;top:35px;display:table;text-align:center;margin:auto;padding-bottom:15px}.madeby{text-align:center;position:relative;font-size:20px;text-decoration:none;font-family:Source Code Pro;font-weight:600;color:#969696}
+	
+.portfolio {
+		position: abosolute;
+		top: 20px;
+		padding: 5px;
+		padding-top: 10px;
+		display: table;
+		font-family: Source Code Pro;
+		width: 90%;
+		max-width: 2000px;
+		text-align: center;
+		margin: auto;
+}
+	
+.portfolio-box {
+		background-color: #13151a;
+		color: white;
+		padding: 12px;
+		border-radius: 5px;
+		font-size: 15px;
+		text-align: left;
+		transition: all .2s linear;
+}
+	
+.portfolio-box-container {
+		padding: 10px;
+        padding-bottom: 25px;
+		display: inline-block;
+		width: 75%;
+		max-width: 750px;
+        min-width: 270px;
+}
+	
+.portoflio-text-container {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+}
+	
+.portfolio-title {
+		text-align: center;
+		font-size: 40px;
+		font-family: Source Code Pro;
+		font-weight: 600;
+		color: #969696;
+}
+	
+.portfolio-title-container {
+		display: inline-block;
+}
+	
+.portfolio-box:hover {
+		transform: scale(1.05) rotate(0.75deg);
+}
+	
+.portfolio-box:active {
+		transform: scale(0.95);
+}
+	
+iframe {
+		overflow: hidden;
+		pointer-events: none;
+}
+    </style>
+	<style>
+		@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300);
+		@import url(https://fonts.googleapis.com/css?family=Comfortaa:600;700);
+		@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+	</style>
+</head>
+
+<body oncontextmenu="return false">
+	<div class="header">
+		<div class="logo"><a onclick="autoScroll()" class="logo"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
+		<div class="navbar-nav"><a href="https://www.instagram.com/_benedictjames/" target="_blank" rel="noopener noreferrer" class="navbar-button">Insta</a></div>
+		<div class="navbar-nav"><a href="https://twitter.com/_benedictjames" target="_blank" rel="noopener noreferrer" class="navbar-button">Twitter</a></div>
+        <div class="navbar-nav"><a href="https://salisbury.edu" target="_blank" rel="noopener noreferrer" class="navbar-button">Salisbury</a></div>
+	</div>
+    
+	<div class="graybackground">
+		<br>
+		<br>
+		<div class="portfolio-title">
+			<div class="portfolio-title-container"> My Work
+				<br> </div>
+		</div>
+		<hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
+		<div class="portfolio">
+        	
+            <a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/theseagull.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="The Seagull">
+						<div class="portoflio-text-container"> The Seagull (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Operated the lighting board for performances and some rehearsals of the production.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+            <a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/beautyandthebeastjr.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Beauty and the Beast Jr">
+						<div class="portoflio-text-container"> Beauty and the Beast Jr (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Assisted resident designer program lighting and operated lighting for the musical.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+            <a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/101dalmatiansjr.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="101 Dalmatians Jr">
+						<div class="portoflio-text-container"> 101 Dalmatians Jr (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Designed and programmed lighting for multi-day youth production.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+            <a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/enchantedbookshop.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="The Enchanted Bookshop">
+						<div class="portoflio-text-container"> The Enchanted Bookshop (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Designed and programmed lighting for one-day youth workshop.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+            <a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/moanajr.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Moana Jr">
+						<div class="portoflio-text-container"> Moana Jr (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Assisted resident designer program lighting and operated lighting for the musical.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+        	<a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/seussical.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Seussical">
+						<div class="portoflio-text-container"> Seussical (2022)
+							<br> <b style="font-size:12px; font-weight: 100;">Hung, designed, programmed, and operated lighting for the musical.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+        	
+        	<a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/peterstarcatcher.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Peter and the Starcatcher">
+						<div class="portoflio-text-container"> Peter and the Starcather (2021)
+							<br> <b style="font-size:12px; font-weight: 100;">Hung, designed, programmed, and operated lighting for the production.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+            
+        	<a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/damnyankees.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Damn Yankees">
+						<div class="portoflio-text-container"> Damn Yankees (2019)
+							<br> <b style="font-size:12px; font-weight: 100;">Served in a stage manager role helping with rehearsals and supervising set construction.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+        	
+			<a style="text-decoration: none;">
+				<div class="portfolio-box-container">
+					<div class="portfolio-box" style="padding-left: 4.5%; padding-top: 3%;"> <img src="https://jbenedict.org/assets/img/wizardofoz.png" style="width:95%; height:auto; border-radius: 5px; padding: 7px;" alt="Wizard of Oz">
+						<div class="portoflio-text-container"> Wizard of Oz (2019)
+							<br> <b style="font-size:12px; font-weight: 100;">Operated a follow spot light for multiple musical numbers throughout the musical.</b>
+							<br> </div>
+					</div>
+				</div>
+			</a>
+			
+		</div>
+		<div class="socials">
+			<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/github.png" alt="Github Pic" style="width: 50px;"></a>
+			<a href="https://twitter.com/_benedictjames" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/twitter.png" alt="Twitter Pic" style="width: 50px;"></a>
+			<a href="https://www.instagram.com/_benedictjames/" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/instagram.png" alt="Instagram Pic" style="width: 50px;"></a>
+			<div class="madeby"> Made By James • <span id="year"></span> </div>
+		</div>
+	</div>
+	<script>
+	const splitText = (String(window.location.href)).split(":");
+	if (splitText[0] == "http") {
+  		window.location.href = "https://jbenedict.org";
+	}
+    
+	document.onkeydown = function(e) {
+	  if(event.keyCode == 123) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+	     return false;
+	  }
+	}
+
+	var today = new Date();
+	let year = today.getFullYear();
+	document.getElementById("year").innerHTML = year;
+
+	function autoScroll() {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+	
+	autoScroll();
+	</script>
+</body>
+</html>
