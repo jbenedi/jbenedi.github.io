@@ -22,8 +22,7 @@
 <body oncontextmenu="return false">
 	<div class="header">
 		<div class="logo"><a onclick="autoScroll()" class="logo"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
-		<div class="navbar-nav"><a href="https://www.instagram.com/_benedictjames/" target="_blank" rel="noopener noreferrer" class="navbar-button">Insta</a></div>
-		<div class="navbar-nav"><a href="https://twitter.com/_benedictjames" target="_blank" rel="noopener noreferrer" class="navbar-button">Twitter</a></div>
+		<div class="navbar-nav"><a onclick="myWork()" class="navbar-button">My Work</a></div>
         	<div class="navbar-nav"><a href="https://jbenedict.org/photography" class="navbar-button">Photography</a></div>
 	</div>
 	<div class="blackbackground">
@@ -182,6 +181,14 @@
 	function autoScroll() {
 		window.scrollTo({
 			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+		
+	function myWork() {
+		window.scrollTo({
+			top: 700,
 			left: 0,
 			behavior: 'smooth'
 		});
