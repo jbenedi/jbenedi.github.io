@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-Frame-Options" content="deny">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" type="text/javascript"></script>
+	<script src="https://jbenedict.org/assets/demos.js"></script>
+	<meta charset="UTF-8">
+	<title>jbenedict.org</title>
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta name="description" content="James - Lighting Designer, Coder, Techie" />
+    <link rel="stylesheet" media="screen" href="https://jbenedict.org/assets/css/main.css">
+    <link rel="stylesheet" media="screen" href="https://jbenedict.org/assets/css/infopage.css">
+	<style>
+		@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300);
+		@import url(https://fonts.googleapis.com/css?family=Comfortaa:600;700);
+		@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+	</style>
+</head>
+
+<body oncontextmenu="return false">
+	<div class="header">
+		<div class="logo"><a href="https://jbenedict.org"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
+        	<div class="navbar-nav"><a href="https://jbenedict.org" class="navbar-button">Return Home</a></div>
+	</div>
+    
+		<div class="portfolio">
+        
+        <a style="text-decoration: none;">
+			<div class="portfolio-box-container">
+                <div class="portfolio-box" style="padding-left: 2.7%;">
+                	<br>
+                    <div class="slideshow-container">
+                      <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="https://jbenedict.org/assets/img/thumbnails/beautyandthebeastjrs22.png" style="width:97%; height:auto; border-radius: 5px; padding: 7px;">
+                        <div class="text"></div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="https://jbenedict.org/portfolio/img/beautyandthebeastjr-2022/1.jpg" style="width:97%; height:auto; border-radius: 5px; padding: 7px;">
+                        <div class="text"></div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="https://jbenedict.org/portfolio/img/beautyandthebeastjr-2022/2.jpg" style="width:97%; height:auto; border-radius: 5px; padding: 7px;">
+                        <div class="text"></div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="https://jbenedict.org/portfolio/img/beautyandthebeastjr-2022/3.jpg" style="width:97%; height:auto; border-radius: 5px; padding: 7px;">
+                        <div class="text"></div>
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+
+                      </div>
+                      <br>
+
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                      </div>
+					</div>
+				</div>
+			</a>
+            
+            <hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
+            
+            <div class="portfolio-text-container"><a style="font-size: 22px;">Beauty and the Beast Jr (Summer 2022)</a><br>
+			<div style="text-decoration:underline">Light Board Operator</div><br>Assisted resident designer in programming lighting and operated lighting for the musical.<br>
+            		<br>Director: Jeff Miller and Debbie Leonard
+					<br>Lighting Designer: Lynn Joslin
+		   			<br>Sound Designer: Brian Schnieder</div>
+			
+            
+
+		<div class="socials">
+			<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/github.png" alt="Github Pic" style="width: 50px;"></a>
+			<a href="https://twitter.com/_benedictjames" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/twitter.png" alt="Twitter Pic" style="width: 50px;"></a>
+			<a href="https://www.instagram.com/_benedictjames/" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/instagram.png" alt="Instagram Pic" style="width: 50px;"></a>
+			<div class="madeby"> Made By James • <span id="year"></span> </div>
+		</div>
+	</div>
+	<script>   
+	document.onkeydown = function(e) {
+	  if(event.keyCode == 123) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+	     return false;
+	  }
+	}
+
+	var today = new Date();
+	let year = today.getFullYear();
+	document.getElementById("year").innerHTML = year;
+
+	function autoScroll() {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+	
+	autoScroll();
+    
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+</body>
+</html>
