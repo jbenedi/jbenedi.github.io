@@ -49,7 +49,7 @@ d {
 }
 	
 .portfolio {
-		position: abosolute;
+		position: absolute;
 		top: 20px;
 		padding: 5px;
 		padding-top: 10px;
