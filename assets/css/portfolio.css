@@ -22,12 +22,12 @@ html {
 }
 
 b {
-        	font-weight: 600;
-        	letter-spacing: -1px;
-        	color: #cccccc;
+		font-weight: 600;
+		letter-spacing: -1px;
+		color: #cccccc;
 		font-size: 20px;
-		font-size: max(16px, min(3vw, 28px));
-		font-size: clamp(16px, 3vw, 28px);
+		font-size: max(17px, min(3vw, 28px));
+		font-size: clamp(17px, 3vw, 28px);
 }
         
 c {
@@ -35,8 +35,8 @@ c {
 		letter-spacing: -1px;
 		color: #cccccc;
 		font-size: 18px;
-		font-size: max(15px, min(2vw, 22px));
-		font-size: clamp(15px, 2vw, 22px);
+		font-size: max(15px, min(2vw, 20px));
+		font-size: clamp(15px, 2vw, 20px);
 }
 
 d {
@@ -49,7 +49,6 @@ d {
 }
 	
 .portfolio {
-		position: absolute;
 		top: 20px;
 		padding: 5px;
 		padding-top: 10px;
