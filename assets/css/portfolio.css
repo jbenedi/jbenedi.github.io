@@ -23,19 +23,19 @@ html {
 
 b {
 		font-weight: 600;
-		letter-spacing: -1px;
+		letter-spacing: -0.5px;
 		color: #cccccc;
 		font-size: 20px;
-		font-size: max(17px, min(4vw, 26px));
-		font-size: clamp(17px, 4vw, 26px);
+		font-size: max(16px, min(4vw, 30px));
+		font-size: clamp(16px, 4vw, 30px);
 }
         
 c {
 		letter-spacing: -1px;
 		color: #cccccc;
 		font-size: 16px;
-		font-size: max(14px, min(3vw, 17px));
-		font-size: clamp(14px, 3vw, 17px);
+		font-size: max(14px, min(3vw, 19px));
+		font-size: clamp(14px, 3vw, 19px);
 }
 	
 .portfolio {
