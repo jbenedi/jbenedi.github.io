@@ -1,6 +1,8 @@
-var today = new Date();
-let year = today.getFullYear();
-document.getElementById("year").innerHTML = year;
+window.onload = function() {
+    var today = new Date();
+    let year = today.getFullYear();
+    document.getElementById("year").innerHTML = year;
+};
 
 function navBar() {
   document.getElementById("dropdownMenu").classList.toggle("show");
