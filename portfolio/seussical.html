@@ -21,12 +21,40 @@
 </head>
 
 <body oncontextmenu="return false">
-	<div class="header">
-		<div class="logo"><a href="https://jbenedict.org"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
-        	<div class="navbar-nav"><a href="https://jbenedict.org/portfolio" class="navbar-button">Return To Portfolio</a></div>
-	</div>
+    <script src="https://jbenedict.org/assets/js/main.js" type="text/javascript"></script>
+    <div class="mobileheader">
+    	<div class="logo"><a href="https://jbenedict.org" class="logo"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
+        <div onclick="navBar()" class="navbar-nav"><div class="navbar-button">☰</div></div>
+	<div id="dropdownMenu" class="dropdown-content">
+          <div class="dropdown-text"><a href="https://jbenedict.org/portfolio" class="dropdown-text">Portfolio</a></div>
+          <div class="dropdown-text"><a href="https://jbenedict.org/photography" class="dropdown-text">Photography</a></div>
+          <div class="dropdown-text"><a href="https://jbenedict.org/about" class="dropdown-text">About Me</a></div>
+          <div class="dropdown-text"><a href="https://jbenedict.org/Contact" class="dropdown-text">Contact</a></div>
+        </div>
+    </div>
+    <div class="desktopheader">
+    	<div class="logo"><a href="https://jbenedict.org" class="logo"><img src="https://jbenedict.org/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div>
+        <div class="dropdown">
+          <div class="navbar-nav"><a href="https://jbenedict.org/portfolio" class="navbar-button"><div class="navbar-highlight">Theatre</div></a></div>
+          <div class="dropdown-content">
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio" class="dropdown-text">Full Portfolio</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/swingofthesea" class="dropdown-text">Swing of the Sea</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/musictheatreworkshop" class="dropdown-text">Musical Theatre Workshop</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/fallstudentshowcase" class="dropdown-text">Fall Student Showcase</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/doctorfaustus" class="dropdown-text">Doctor Faustus</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/themaids" class="dropdown-text">The Maids</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/funhome" class="dropdown-text">Fun Home</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/theseagull" class="dropdown-text">The Seagull</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/seussical" class="dropdown-text">Seussical</a></div>
+            <div class="dropdown-text"><a href="https://jbenedict.org/portfolio/peterstarcatcher" class="dropdown-text">Peter and the Starcatcher</a></div>     
+          </div>
+        </div>
+        <div class="navbar-nav"><a href="https://jbenedict.org/photography" class="navbar-button">Photography</a></div>
+        <div class="navbar-nav"><a href="https://jbenedict.org/about" class="navbar-button">About</a></div>
+        <div class="navbar-nav"><a href="https://jbenedict.org/contact" class="navbar-button">Contact</a></div>
+    </div>
     
-		<div class="portfolio">
+	<div class="portfolio">
         
         <a style="text-decoration: none;">
 			<div class="portfolio-box-container">
