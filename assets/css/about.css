@@ -1,0 +1,93 @@
+html {
+	overflow: overlay;
+	scroll-behavior: smooth;
+}
+	
+*::-webkit-scrollbar {
+	width: 10px;
+}
+	
+*::-webkit-scrollbar-track {
+	opacity: 1;
+}
+	
+*::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 0.5rem;
+}
+	
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #575757;
+}
+	
+.portfolio {
+	position: abosolute;
+	top: 20px;
+	padding: 5px;
+	padding-top: 10px;
+	display: table;
+	font-family: Source Code Pro;
+	width: 95%;
+
+	text-align: center;
+	margin: auto;
+}
+	
+.portfolio-box {
+	background-color: #13151a;
+	color: white;
+	padding: 12px;
+	border-radius: 5px;
+	font-size: 15px;
+	text-align: left;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+}
+	
+.portfolio-box-container {
+	padding: 10px;
+	padding-bottom: 25px;
+	display: inline-block;
+	width: 85%;
+	max-width: 900px;
+	min-width: 300px;
+	padding-top: 140px;
+}
+
+.text-container {
+	width: 90%;
+	padding: 20px;
+	padding-right: 20px;
+	margin: auto;
+	color: white; 
+	font-size: min(max(14px, 2vw), 18px);
+	font-weight: 100;
+}
+
+.title {
+	font-size: min(max(24px, 4vw), 32px);
+	font-weight: 600;
+}
+
+.button {
+	background-color: #13151a;
+	color: white;
+	padding: 12px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+	margin: auto; 
+	width: 50%;
+	max-width: 200px;
+	z-index: 5;
+	font-size: min(max(13px, 2vw), 16px);
+}
+.button:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+	transform: scale(1.075) rotate(1deg);
+	cursor: pointer;
+}
+.button:active {
+	transform: scale(0.95);
+}
