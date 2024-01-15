@@ -54,7 +54,7 @@ html {
 	display: table;
 	font-family: Source Code Pro;
 	width: 95%;
-	max-width: 950px;
+
 	text-align: center;
 	margin: auto;
 }
@@ -98,13 +98,36 @@ html {
 	padding-right: 20px;
 	margin: auto;
 	color: white; 
-	font-size: min(max(14px, 4vw), 18px);
+	font-size: min(max(14px, 3vw), 18px);
 	font-weight: 100;
 }
 
 .title {
         font-size: min(max(24px, 4vw), 32px);
         font-weight: 600;
+}
+
+.button {
+	background-color: #13151a;
+	color: white;
+	padding: 12px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+    margin: auto; 
+    width: 50%;
+    max-width: 200px;
+    z-index: 5;
+    font-size: min(max(13px, 2vw), 16px);
+}
+.button:hover {
+    filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+    transform: scale(1.075) rotate(1deg);
+    cursor: pointer;
+}
+.button:active {
+    transform: scale(0.95);
 }
         
         
@@ -164,7 +187,11 @@ html {
                 <div class="portfolio-box" style="padding-left: 2.7%; z-index: 5;">
                 <div class="portfolio-text-container">
                 	<div class="title">Hi, I'm <bold>James</bold>!</div><br>
-		    		<br>I'm a college student currently studying Theatre Design and Production at Salisbury University! My goal is to one day 
+		    		<br>I'm a university student currently studying Theatre Design and Production at Salisbury University! My focus inside Theatre Design and Production is in lighting, and I have been learning about theatrical lighting since my freshmen year of high school.
+                    <br><br>I currently have 17 productions of experience under my belt divided between high school, local theatre, and experience in theatre lighting at my university.
+                    <br><br>My goal after college is to get involved with the theatre industry as a lighting designer or electrician working with lights, as lighting has always been my passion inside theatre.
+                    <br><br><br>If you would like to download my resume, click the button below!
+                    <br><br><div class="button" onclick="location.href = 'https://jbenedict.org/resume';">Download Resume</div>
 	    		</div>
                 </div>
 			</div>
@@ -179,13 +206,12 @@ html {
             <link rel="stylesheet" media="screen" href="https://jbenedict.org/assets/css/particles.css">
         </div>
     
-    <div class="footer">
 		<div class="socials">
 			<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/github.png" alt="Github Pic" style="width: 50px;"></a>
 			<a href="https://www.instagram.com/_benepics/" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/instagram.png" alt="Instagram Pic" style="width: 50px;"></a>
             <a href="https://www.youtube.com/@benedictjames/" target="_blank" rel="noopener noreferrer" style="padding: 5px;"><img src="https://jbenedict.org/assets/img/youtube.png" alt="Youtube Pic" style="width: 50px;"></a>
 			<div class="madeby"> Made By James • <span id="year"></span> </div>
 		</div>
-	</div>
+
 </body>
 </html>
