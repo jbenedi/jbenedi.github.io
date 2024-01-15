@@ -22,7 +22,7 @@ html, body {
 }
 
 .scrollable {
-		height: 67%;
+		height: 65%;
 		overflow-y: scroll;
 }
 
