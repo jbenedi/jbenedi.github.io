@@ -1,8 +1,9 @@
-html {
-	overflow: overlay;
-	scroll-behavior: smooth;
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
 }
-	
+
 *::-webkit-scrollbar {
 	width: 10px;
 }
@@ -19,16 +20,18 @@ html {
 *::-webkit-scrollbar-thumb:hover {
 	background-color: #575757;
 }
+
+.scrollable {
+	height: 70%;
+	overflow-y: scroll;
+}
 	
 .portfolio {
-	position: abosolute;
-	top: 20px;
 	padding: 5px;
 	padding-top: 10px;
 	display: table;
 	font-family: Source Code Pro;
 	width: 95%;
-
 	text-align: center;
 	margin: auto;
 }
@@ -51,7 +54,6 @@ html {
 	width: 85%;
 	max-width: 900px;
 	min-width: 300px;
-	padding-top: 140px;
 }
 
 .text-container {
