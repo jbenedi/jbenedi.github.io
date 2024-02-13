@@ -8,7 +8,6 @@
 -finish contact me page
 
 should all pages have particles in background?
-make header the same for all pages, and highlight which page you are currently on in header
 
 
 
