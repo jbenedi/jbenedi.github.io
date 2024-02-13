@@ -19,15 +19,6 @@
 		@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
         
         
-        img:hover {
-          transform: scale(1.25);
-          border: rgba(255, 255, 255, .1) 2px solid;
-          border-radius: 5px;
-        }
-        img {
-        	transition: transform .2s;
-        }
-
 html, body {
 		margin: 0;
 		height: 100%;
@@ -189,6 +180,17 @@ html, body {
 	font-size: min(max(14px, 4vw), 18px);
 	font-weight: 100;
 }
+
+img:hover {
+	transform: scale(1.25);
+	border: rgba(255, 255, 255, .1) 2px solid;
+	border-radius: 5px;
+}
+
+img {
+	transition: transform .2s;
+}
+
 
 .infotitle {
         font-size: min(max(22px, 4vw), 32px);
