@@ -181,18 +181,6 @@ html, body {
 	font-weight: 100;
 }
 
-.description-text-container {
-	display: inline-block;
-	width: 45%;
-	padding: 15px;
-	padding-right: 15px;
-	margin: auto;
-	color: white; 
-	font-size: min(max(14px, 4vw), 18px);
-	font-weight: 100;
-    text-align: left;
-}
-
 .infotitle {
 	font-size: min(max(24px, 6vw), 32px);
 	font-weight: 600;
@@ -203,9 +191,39 @@ html, body {
 }
 
 
-        
-        
-        
+@media only screen and (max-device-width:650px) {
+  .desktopdescription {
+      display: none;
+  }
+  .mobiledescription {
+      display: inline-block;
+      width: 90%;
+      padding: 20px;
+      padding-right: 20px;
+      margin: auto;
+      color: white; 
+      font-size: min(max(14px, 4vw), 18px);
+      font-weight: 100;
+      text-align: left;
+  }
+}
+
+@media only screen and (min-device-width:651px) {
+  .mobileheader {
+      display: none;
+  }
+  .desktopdescription {
+      display: inline-block;
+      width: 45%;
+      padding: 15px;
+      padding-right: 15px;
+      margin: auto;
+      color: white; 
+      font-size: min(max(14px, 4vw), 18px);
+      font-weight: 100;
+      text-align: left;
+  }
+}
         
         
 	</style>
@@ -331,10 +349,10 @@ html, body {
             <hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
             
             <div class="meta">Fall 2023</div>
-            <div class="description-text-container"><div class="infotitle">SWING OF THE SEA</div><br>
+            <div class="desktopdescription"><div class="infotitle">SWING OF THE SEA</div><br>
 			<div style="font-weight: 600">Lighting Designer</div><br>This play was put on as a final for the university's directing class, and was organized into 11 scenes with each scene getting a different director from the class.<br><br></div>
                 
-            <div class="description-text-container">
+            <div class="desktopdescription">
 		    	Directors: Jacob Rudland, Seren Gross, Allison Dincau, Grey Reynolds, Andrea Sicoli, Camille Jones, Jordan Leoncini, Lauryn Damron, Briana King
 			<br><br>Lighting Designer: James Benedict
 	    	<br><br>Costume and Sound Designer: Blake Harris</div>
