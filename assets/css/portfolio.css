@@ -72,6 +72,7 @@ c {
 		width: 95%;
 		max-width: 500px;
 		min-width: 270px;
+        transition: all .2s linear;
 }
 	
 .portoflio-text-container {
@@ -94,11 +95,11 @@ c {
 		padding-top: 120px;
 }
 	
-.portfolio-box:hover {
+.portfolio-box-container:hover {
 		transform: scale(1.05) rotate(0.75deg);
 }
 	
-.portfolio-box:active {
+.portfolio-box-container:active {
 		transform: scale(0.95);
 }
 
