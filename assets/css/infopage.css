@@ -1,30 +1,38 @@
-html {
-	overflow: overlay;
-	scroll-behavior: smooth;
-	background-color: #1e1e1e;
+html, body {
+		margin: 0;
+		height: 100%;
+		overflow: hidden;
 }
-	
+
 *::-webkit-scrollbar {
-	width: 10px;
+		width: 10px;
 }
 	
 *::-webkit-scrollbar-track {
-	opacity: 1;
+		opacity: 0;
 }
 	
 *::-webkit-scrollbar-thumb {
-	background-color: #888;
-	border-radius: 0.5rem;
+		background-color: #888;
+		border-radius: 0.5rem;
 }
 	
 *::-webkit-scrollbar-thumb:hover {
-	background-color: #575757;
+		background-color: #575757;
 }
+
+.scrollable {
+		height: 100%;
+		overflow-y: scroll;
+}
+
 
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
+    padding-right:5px;
+    right: 0.1vw;
 }
 
 .prev, .next {
@@ -100,13 +108,9 @@ html {
 	
 .portfolio {
 	position: abosolute;
-	top: 20px;
-	padding: 5px;
-	padding-top: 10px;
 	display: table;
 	font-family: Source Code Pro;
-	width: 95%;
-	max-width: 950px;
+	width: 100%;
 	text-align: center;
 	margin: auto;
 }
@@ -120,6 +124,7 @@ html {
 	text-align: left;
 	transition: all .2s linear;
 	border: rgba(255, 255, 255, .1) 2px solid;
+    
 }
 	
 .portfolio-box-container {
@@ -127,7 +132,7 @@ html {
 	padding-bottom: 25px;
 	display: inline-block;
 	width: 85%;
-	max-width: 900px;
+	max-width: 1100px;
 	min-width: 300px;
 	padding-top: 140px;
 }
@@ -155,6 +160,47 @@ html {
 }
 
 .infotitle {
-        font-size: min(max(22px, 4vw), 32px);
-        font-weight: 600;
+	font-size: min(max(24px, 6vw), 32px);
+	font-weight: 600;
+}
+
+.meta {
+	display: none;
+}
+
+
+@media only screen and (max-device-width:650px) {
+	.desktopdescription {
+		display: none;
+	}
+	.mobiledescription {
+		display: inline-block;
+		width: 90%;
+		padding: 20px;
+		padding-right: 20px;
+		 margin: auto;
+		color: white; 
+		font-size: min(max(14px, 4vw), 18px);
+		font-weight: 100;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-device-width:651px) {
+	.mobiledescription {
+		display: none;
+	}
+	.desktopdescription {
+		display: inline-block;
+		width: 45%;
+		padding: 15px;
+		padding-right: 15px;
+		margin: auto;
+		color: white; 
+		font-size: min(max(14px, 4vw), 18px);
+		font-weight: 100;
+		text-align: left;
+		max-width: 500px;
+		padding-right: 5px;
+	}
 }
