@@ -9,7 +9,7 @@ html, body {
 }
 	
 *::-webkit-scrollbar-track {
-		opacity: 0;
+		opacity: 1;
 }
 	
 *::-webkit-scrollbar-thumb {
@@ -22,185 +22,88 @@ html, body {
 }
 
 .scrollable {
-		height: 100%;
+		height: 65%;
 		overflow-y: scroll;
 }
 
-
-.slideshow-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
-    padding-right:5px;
-    right: 0.1vw;
+b {
+		font-weight: 600;
+		letter-spacing: -0.5px;
+		color: #cccccc;
+		font-size: 20px;
+		font-size: max(16px, min(4vw, 29px));
+		font-size: clamp(16px, 4vw, 29px);
 }
-
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -22px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-}
-
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
-}
-
-.numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-}
-
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-	background-color: #717171;
-}
-
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-	.prev, .next,.text {font-size: 11px}
+        
+c {
+		letter-spacing: -1px;
+		color: #cccccc;
+		font-size: 16px;
+		font-size: max(14px, min(3vw, 19px));
+		font-size: clamp(14px, 3vw, 19px);
 }
 	
 .portfolio {
-	position: abosolute;
-	display: table;
-	font-family: Source Code Pro;
-	width: 100%;
-	text-align: center;
-	margin: auto;
+		top: 20px;
+		padding: 5px;
+		padding-bottom: 20px;
+		display: table;
+		font-family: Source Code Pro;
+		width: 90%;
+		max-width: 2000px;
+		text-align: center;
+		margin: auto;
 }
 	
 .portfolio-box {
-	background-color: #13151a;
-	color: white;
-	padding: 12px;
-	border-radius: 5px;
-	font-size: 15px;
-	text-align: left;
-	transition: all .2s linear;
-	border: rgba(255, 255, 255, .1) 2px solid;
-    
+		background-color: #13151a;
+		color: #ffffff;
+		padding: 12px;
+		border-radius: 5px;
+		text-align: left;
+		transition: all .2s linear;
+		border: rgba(255, 255, 255, .1) 2px solid;
 }
 	
 .portfolio-box-container {
-	padding: 10px;
-	padding-bottom: 25px;
-	display: inline-block;
-	width: 85%;
-	max-width: 1100px;
-	min-width: 300px;
-	padding-top: 140px;
+		padding: 12px;
+		padding-bottom: 25px;
+		display: inline-block;
+		width: 95%;
+		max-width: 500px;
+		min-width: 270px;
+        transition: all .2s linear;
+}
+	
+.portoflio-text-container {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 }
 	
 .portfolio-title {
-	text-align: center;
-	font-size: 40px;
-	font-family: Source Code Pro;
-	font-weight: 600;
-	color: #969696;
+		text-align: center;
+		font-size: 40px;
+		font-family: Source Code Pro;
+		font-weight: 600;
+		color: #969696;
 }
 	
 .portfolio-title-container {
-	display: inline-block;
-}
-
-.portfolio-text-container {
-	width: 90%;
-	padding: 20px;
-	padding-right: 20px;
-	margin: auto;
-	color: white; 
-	font-size: min(max(14px, 4vw), 18px);
-	font-weight: 100;
-}
-
-.infotitle {
-	font-size: min(max(24px, 6vw), 32px);
-	font-weight: 600;
-}
-
-.meta {
-	display: none;
-}
-
-
-@media only screen and (max-device-width:650px) {
-	.desktopdescription {
-		display: none;
-	}
-	.mobiledescription {
 		display: inline-block;
-		width: 90%;
-		padding: 20px;
-		padding-right: 20px;
-		 margin: auto;
-		color: white; 
-		font-size: min(max(14px, 4vw), 18px);
-		font-weight: 100;
-		text-align: left;
-	}
+		padding-top: 120px;
+}
+	
+.portfolio-box-container:hover {
+		transform: scale(1.05) rotate(0.75deg);
+}
+	
+.portfolio-box-container:active {
+		transform: scale(0.95);
 }
 
-@media only screen and (min-device-width:651px) {
-	.mobiledescription {
-		display: none;
-	}
-	.desktopdescription {
-		display: inline-block;
-		width: 45%;
-		padding: 15px;
-		padding-right: 15px;
-		margin: auto;
-		color: white; 
-		font-size: min(max(14px, 4vw), 18px);
-		font-weight: 100;
-		text-align: left;
-		max-width: 500px;
-		padding-right: 5px;
-	}
+iframe {
+		overflow: hidden;
+		pointer-events: none;
 }
