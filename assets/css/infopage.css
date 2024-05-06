@@ -170,10 +170,7 @@ html, body {
 
 
 @media only screen and (max-device-width:650px) {
-	.desktopdescription {
-		display: none;
-	}
-	.mobiledescription {
+	.description {
 		display: inline-block;
 		width: 90%;
 		padding: 20px;
@@ -187,10 +184,7 @@ html, body {
 }
 
 @media only screen and (min-device-width:651px) {
-	.mobiledescription {
-		display: none;
-	}
-	.desktopdescription {
+	.description {
 		display: inline-block;
 		width: 45%;
 		padding: 15px;
