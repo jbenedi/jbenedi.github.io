@@ -37,16 +37,6 @@ html, body {
 }
 	
 .portfolio-box {
-		background-color: #13151a;
-		color: #ffffff;
-		padding: 12px;
-		border-radius: 5px;
-		text-align: left;
-		transition: all .2s linear;
-		border: rgba(255, 255, 255, .1) 2px solid;
-}
-	
-.portfolio-box-container {
 		padding: 12px;
 		padding-bottom: 20px;
 		display: inline-block;
