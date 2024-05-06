@@ -25,23 +25,6 @@ html, body {
 		height: 100%;
 		overflow-y: scroll;
 }
-
-b {
-		font-weight: 600;
-		letter-spacing: -0.5px;
-		color: #cccccc;
-		font-size: 20px;
-		font-size: max(16px, min(4vw, 29px));
-		font-size: clamp(16px, 4vw, 29px);
-}
-        
-c {
-		letter-spacing: -1px;
-		color: #cccccc;
-		font-size: 16px;
-		font-size: max(14px, min(3vw, 19px));
-		font-size: clamp(14px, 3vw, 19px);
-}
 	
 .portfolio {
 		display: table;
@@ -73,35 +56,10 @@ c {
         transition: all .2s linear;
 }
 	
-.portoflio-text-container {
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-top: 5px;
-		margin-bottom: 5px;
-}
-	
-.portfolio-title {
-		text-align: center;
-		font-size: 40px;
-		font-family: Source Code Pro;
-		font-weight: 600;
-		color: #969696;
-}
-	
-.portfolio-title-container {
-		display: inline-block;
-		padding-top: 120px;
-}
-	
 .portfolio-box-container:hover {
 		transform: scale(1.05) rotate(0.75deg);
 }
 	
 .portfolio-box-container:active {
 		transform: scale(0.95);
-}
-
-iframe {
-		overflow: hidden;
-		pointer-events: none;
 }
