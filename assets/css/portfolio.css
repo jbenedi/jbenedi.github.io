@@ -46,10 +46,10 @@ html, body {
 		transition: all .2s linear;
 }
 	
-.portfolio-box-container:hover {
+.portfolio-box:hover {
 		transform: scale(1.05) rotate(0.75deg);
 }
 	
-.portfolio-box-container:active {
+.portfolio-box:active {
 		transform: scale(0.95);
 }
