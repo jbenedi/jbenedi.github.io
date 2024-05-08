@@ -30,7 +30,6 @@ html, body {
 		display: table;
 		font-family: Source Code Pro;
 		width: 100%;
-		max-width: 1300px;
 		text-align: center;
 		margin: auto;
 		padding-top: 140px;
@@ -51,7 +50,7 @@ html, body {
 		padding: 10px;
 		display: inline-block;
 		width: 25%;
-		max-width: 300px;
+		max-width: 330px;
 		min-width: 250px;
 }
 	
