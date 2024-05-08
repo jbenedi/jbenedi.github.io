@@ -22,21 +22,18 @@ html, body {
 }
 
 .scrollable {
-		height: 65%;
+		height: 100%;
 		overflow-y: scroll;
 }
-	
+
 .portfolio {
-		position: abosolute;
-		top: 20px;
-		padding: 5px;
-		padding-top: 10px;
 		display: table;
 		font-family: Source Code Pro;
-		width: 95%;
-		max-width: 1350px;
+		width: 100%;
+		max-width: 1300px;
 		text-align: center;
 		margin: auto;
+		padding-top: 140px;
 }
 	
 .portfolio-box {
@@ -48,14 +45,14 @@ html, body {
 		text-align: left;
 		transition: all .2s linear;
 }
-	
+
+
 .portfolio-box-container {
 		padding: 10px;
-        	padding-bottom: 25px;
 		display: inline-block;
 		width: 25%;
 		max-width: 300px;
-        	min-width: 250px;
+		min-width: 250px;
 }
 	
 .portfolio-title {
