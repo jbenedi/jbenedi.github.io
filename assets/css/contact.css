@@ -1,0 +1,153 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+}
+	
+*::-webkit-scrollbar-track {
+	opacity: 1;
+}
+	
+*::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 0.5rem;
+}
+	
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #575757;
+}
+
+.scrollable {
+	height: 100%;
+	overflow-y: scroll;
+}
+	
+.portfolio {
+	display: table;
+	font-family: Source Code Pro;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 140px;
+}
+	
+.portfolio-box {
+	display: inline-block;
+	background-color: #13151a;
+	color: white;
+	border-radius: 5px;
+	font-size: 15px;
+	text-align: left;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+	max-width: 900px;
+	min-width: 300px;
+	width: 80%;
+}
+
+.title {
+	font-size: min(max(24px, 4vw), 32px);
+	font-weight: 600;
+}
+
+.button {
+	background-color: #13151a;
+	color: white;
+	padding: 12px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+	margin: auto; 
+	width: 50%;
+	max-width: 200px;
+	z-index: 5;
+	font-size: min(max(13px, 2vw), 16px);
+}
+.button:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+	transform: scale(1.075) rotate(1deg);
+	cursor: pointer;
+}
+.button:active {
+	transform: scale(0.95);
+}
+
+.contactform-body {
+	width: 100%;
+}
+
+.contactform-field {
+	width: 90%;
+	background-color: #13151a;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+	margin: auto; 
+	font-size: min(max(13px, 2vw), 16px);
+	font-family: Source Code Pro;
+}
+
+.contactform-input-group {
+	padding-top: 10px;
+}
+
+.contactform-submit {
+	background-color: #13151a;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all .2s linear;
+	border: rgba(255, 255, 255, .1) 2px solid;
+	margin: auto; 
+	font-size: min(max(13px, 2vw), 16px);
+	font-family: Source Code Pro;
+}
+.contactform-submit:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
+	transform: scale(1.075) rotate(1deg);
+	cursor: pointer;
+}
+.contactform-submit:active {
+	transform: scale(0.95);
+}
+		
+@media only screen and (max-device-width:650px) {
+	.description {
+		display: inline-block;
+		width: 90%;
+		padding: 20px;
+		padding-right: 20px;
+		margin: auto;
+		color: white; 
+		font-size: min(max(14px, 4vw), 18px);
+		font-weight: 100;
+		text-align: left;
+	}
+	.description-space {
+		display: none;
+	}
+}
+
+@media only screen and (min-device-width:651px) {
+	.description {
+		display: inline-block;
+		width: 45%;
+		padding: 15px;
+		padding-right: 15px;
+		margin: auto;
+		color: white; 
+		font-size: min(max(14px, 4vw), 18px);
+		font-weight: 100;
+		text-align: left;
+		max-width: 500px;
+		padding-right: 5px;
+	}
+}
