@@ -22,18 +22,17 @@ html, body {
 }
 
 .scrollable {
-	height: 70%;
+	height: 100%;
 	overflow-y: scroll;
 }
 	
 .portfolio {
-	padding: 5px;
-	padding-top: 10px;
 	display: table;
 	font-family: Source Code Pro;
-	width: 95%;
+	width: 100%;
 	text-align: center;
 	margin: auto;
+	padding-top: 140px;
 }
 	
 .portfolio-box {
