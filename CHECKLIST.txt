@@ -4,17 +4,3 @@
 -Make it so you can click into images in portfolio pages
 
 -add some personality to typed.js
-
--finish contact me page
-
-should all pages have particles in background?
-
-
-
-<link rel="stylesheet" media="screen" href="style.css" type="text/css" />
-<link rel="stylesheet" media="handheld" href="mobile.css" type="text/css" />
-
-@media only screen and (max-device-width: 650px) {bold {color: #ffffff;}}
-
-This media query expresses that the style sheet is usable on devices with viewport (the part of the screen/paper where the document is rendered) widths between 400 and 700 pixels:
-@media screen and (min-width: 400px) and (max-width: 700px) { … }
