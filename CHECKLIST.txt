@@ -1,1 +1,1 @@
--make all text bigger inside portfolio pages for pc screens
+
