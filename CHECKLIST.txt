@@ -1,4 +1,1 @@
 -make all text bigger inside portfolio pages for pc screens
--Make it so you can click into images in portfolio pages
-
--add some personality to typed.js
