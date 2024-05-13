@@ -15,16 +15,16 @@ Peter and the Starcatcher;peterstarcatcher
 
 
 
-let ct = document.querySelector(".ct");
+let dropdownfields = document.querySelector(".dropdownfields");
 
 const arr = [100,102,900];
 
 
 arr.forEach(value=>{
-  const currentElement = document.createElement("a");
+  const currentElement = document.createElement("div");
   currentElement.innerHTML = value + "<br/>";
-  ct.appendChild(currentElement);
+  dropdownfields.appendChild(currentElement);
 })
 
 
-<p class="ct"></p>
+<p class="dropdownfields"></p>
