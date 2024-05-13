@@ -2,7 +2,6 @@ let dropdownfields = document.querySelector(".dropdownfields");
 
 const arr = ["Town Hall!townhall","Fresh Tracks!freshtracks","Little Shop of Horrors!littleshopofhorrors","Swing of the Sea!swingofthesea","Musical Theatre Workshop!musictheatreworkshop","Fall Student Showcase!fallstudentshowcase","Doctor Faustus!doctorfaustus","The Maids!themaids","Fun Home!funhome","The Seagull!theseagull","Seussical!seussical","Peter and the Starcatcher!peterstarcatcher"];
 
-
 arr.forEach(value=>{
   const words = value.split('!');
   const currentElement = document.createElement("div");
