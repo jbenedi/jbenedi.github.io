@@ -12,3 +12,19 @@ Fun Home;funhome
 The Seagull;theseagull
 Seussical;seussical
 Peter and the Starcatcher;peterstarcatcher
+
+
+
+let ct = document.querySelector(".ct");
+
+const arr = [100,102,900];
+
+
+arr.forEach(value=>{
+  const currentElement = document.createElement("a");
+  currentElement.innerHTML = value + "<br/>";
+  ct.appendChild(currentElement);
+})
+
+
+<p class="ct"></p>
