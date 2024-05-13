@@ -23,9 +23,6 @@ Peter and the Starcatcher;peterstarcatcher
 </body>
 
 
-<div class="dropdown-text"><a href="https://jbenedict.work/portfolio/link" target="_top" class="dropdown-text">NAME</a></div>
-
-
 
 <script>
 let dropdownfields = document.querySelector(".dropdownfields");
@@ -43,3 +40,4 @@ arr.forEach(value=>{
 
 
 </html>
+
