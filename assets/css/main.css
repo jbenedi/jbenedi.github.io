@@ -43,7 +43,7 @@ bold {
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
 	    background-color: rgba(38, 38, 38, .9);
 	}
-	@supports (backdrop-filter:blur(15px)) {
+	@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 	    .mobileheader {
 	    z-index: 2;
 	    width: 100%;
@@ -55,6 +55,7 @@ bold {
 	    background: #262626;
 	    background: 0 0;
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
+	    -webkit-backdrop-filter: blur(15px);
 	    backdrop-filter: blur(15px);
 	}
 	}.logo {
@@ -162,7 +163,7 @@ bold {
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
 	    background-color: rgba(38, 38, 38, .9);
 	}
-	@supports (backdrop-filter:blur(15px)) {
+	@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 	    .desktopheader {
 	    z-index: 2;
 	    width: 100%;
@@ -175,6 +176,7 @@ bold {
 	    background: #262626;
 	    background: 0 0;
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
+	    -webkit-backdrop-filter: blur(15px);
 	    backdrop-filter: blur(15px);
 	}
 	}.navbar-nav {
