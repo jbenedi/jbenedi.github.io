@@ -55,8 +55,8 @@ bold {
 	    background: #262626;
 	    background: 0 0;
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
-	    -webkit-backdrop-filter: blur(15px);
-	    backdrop-filter: blur(15px);
+	    -webkit-backdrop-filter: blur(10px);
+	    backdrop-filter: blur(10px);
 	}
 	}.logo {
 	    animation-name: logo-animation;
@@ -176,8 +176,8 @@ bold {
 	    background: #262626;
 	    background: 0 0;
 	    border-bottom: rgba(255, 255, 255, .1) 1px solid;
-	    -webkit-backdrop-filter: blur(15px);
-	    backdrop-filter: blur(15px);
+	    -webkit-backdrop-filter: blur(10px);
+	    backdrop-filter: blur(10px);
 	}
 	}.navbar-nav {
 	    font-family: Comfortaa;
