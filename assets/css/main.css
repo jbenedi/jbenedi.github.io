@@ -306,10 +306,6 @@ bold {
 	animation-fill-mode: forwards;
 }
 @keyframes navReveal {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100;
-	}
+	0% {opacity: 0;}
+	100% {opacity: 100;}
 }
