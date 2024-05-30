@@ -331,12 +331,12 @@ bold {
     	font-weight: 600;
     	color: #969696;
 }
-.navFadeIn {
+body {
 	opacity: 0;
-	animation: 0.5s ease-out 0.5s 1 navReveal;
+	animation: 0.5s ease-out 0.5s 1 reveal;
 	animation-fill-mode: forwards;
 }
-@keyframes navReveal {
+@keyframes reveal {
 	0% {opacity: 0;}
 	100% {opacity: 100;}
 }
