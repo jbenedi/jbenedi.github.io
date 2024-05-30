@@ -6,8 +6,6 @@ window.onload = function() {
 
 function navBar() {
   document.getElementById("dropdownMenu").classList.toggle("show");
-  document.getElementById("hamburger").classList.toggle("hide");
-  document.getElementById("close").classList.toggle("show");
 }
 
 window.onclick = function(event) {
