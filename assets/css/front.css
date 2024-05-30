@@ -333,8 +333,7 @@ bold {
 }
 .fadeIn {
   opacity: 0;
-  animation: 3s ease-out 4.5s 1 reveal;
-  animation-fill-mode: forwards;
+  animation: 3s ease-out 4.5s 1 reveal forwards;
 }
 @keyframes reveal {
 	0% {opacity: 0;}
