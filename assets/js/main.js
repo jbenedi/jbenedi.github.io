@@ -43,7 +43,7 @@ const children = document.querySelectorAll('.navbar-nav');
 
 children.forEach(child => {
   child.addEventListener('click', function() {
-    document.body.style.animation = '0.5s ease-out 0s 1 hide forwards';
+    document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
   });
 });
 
