@@ -39,20 +39,8 @@ document.onkeydown = function(e) {
     }
 }
 
-const children = document.querySelectorAll('.navbar-nav');
-children.forEach(child => {
-  child.addEventListener('click', function() {
-    document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
-  });
-});
-const logo = document.querySelectorAll('.logo');
-logo.forEach(child => {
-  child.addEventListener('click', function() {
-    document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
-  });
-});
-
 function delayedRedirect(element) {
+    document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
     const url = element.getAttribute('data-url');
     setTimeout(function() {
         window.location.href = url;
