@@ -162,7 +162,12 @@ bold {
 	    transform: scale(.95);
 	}
 	.dropdown-content {
-	    display: none;
+	    display: block;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 10;
+		transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+		
 	    position: absolute;
 	    background-color: #1e1e1e;
 	    width: 100%;
@@ -171,7 +176,6 @@ bold {
 		top: 0px;
 	    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
 	    padding: 8px 16px;
-	    z-index: 10;
 	    background-color: rgba(0, 0, 0, .8);
 		text-align: center;
 	}
@@ -192,15 +196,18 @@ bold {
 	    transform: scale(.95);
 	}
 	.show {
-	    display: block;
+		opacity: 1;
+		visibility: visible;
+		transition-delay: 0s;
 	}
 	.dropdown {
 	    position: relative;
 	    display: inline-block;
+
 	}
 }
 
-@media only screen and (min-device-width:63251px) {
+@media only screen and (min-device-width:632251px) {
     	.mobileheader {
 	    display: none;
 	}
