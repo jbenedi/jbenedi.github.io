@@ -45,5 +45,4 @@ function delayedRedirect(element) {
     setTimeout(function() {
         window.location.href = url;
     }, 500);
-    
 }
