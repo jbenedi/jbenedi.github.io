@@ -45,6 +45,12 @@ children.forEach(child => {
     document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
   });
 });
+const logo = document.querySelectorAll('.logo');
+logo.forEach(child => {
+  child.addEventListener('click', function() {
+    document.body.style.animation = '0.5s ease-out 0s 1 unReveal forwards';
+  });
+});
 
 function delayedRedirect(element) {
     const url = element.getAttribute('data-url');
