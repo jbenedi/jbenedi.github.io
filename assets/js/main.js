@@ -38,3 +38,18 @@ document.onkeydown = function(e) {
        return false;
     }
 }
+
+const children = document.querySelectorAll('.navbar-nav');
+
+children.forEach(child => {
+  child.addEventListener('click', function() {
+    document.body.style.animation = '0.5s ease-out 0s 1 hide forwards';
+  });
+});
+
+function delayedRedirect(element) {
+    const url = element.getAttribute('data-url');
+    setTimeout(function() {
+        window.location.href = url;
+    }, 500);
+}
