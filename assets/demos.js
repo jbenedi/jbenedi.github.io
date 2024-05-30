@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     stringsElement: '#typed-strings',
     typeSpeed: 50,
     backSpeed: 50,
-    startDelay: 3000,
+    startDelay: 2000,
     loop: true,
     loopCount: Infinity,
     onBegin: function(self) {
