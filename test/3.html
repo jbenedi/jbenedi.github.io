@@ -74,6 +74,9 @@ bold {
 	font-weight: 600;
 	color: white;
 }
+
+
+
 @media only screen and (max-device-width: 650px) {
 	.desktopheader {
 		display: none;
@@ -139,7 +142,7 @@ bold {
 		transform: rotate(3deg);
 	}
 }
-.navbar-nav {
+.navbar-icon {
 	position: absolute;
 	transform: scale(1);
 	transition: all .2s linear;
@@ -147,8 +150,27 @@ bold {
 	font-size: 40px;
 	cursor: pointer;
 }
-.navbar-button {
+.navbar-iconbutton {
 	color: #ffffff;
+}
+.navbar-icon:hover {
+	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
+	transform: scale(1.075) rotate(1deg);
+}
+.navbar-icon:active {
+	transform: scale(.95);
+}	
+.navbar-nav {
+	font-family: Sofia Pro Black;
+	font-size: 20px;
+	padding: 15px;
+	padding-left: 1%;
+	padding-right: 1%;
+	transition: all .1s linear;
+}
+.navbar-button {
+	color: #969696;
+	text-decoration: none;
 }
 .navbar-nav:hover {
 	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
@@ -157,29 +179,6 @@ bold {
 .navbar-nav:active {
 	transform: scale(.95);
 }
-		
-		
-.desktop-navbar-nav {
-	font-family: Sofia Pro Black;
-	font-size: 20px;
-	padding: 15px;
-	padding-left: 1%;
-	padding-right: 1%;
-	transition: all .1s linear;
-}
-.desktop-navbar-button {
-	color: #969696;
-	text-decoration: none;
-}
-.desktop-navbar-nav:hover {
-	filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
-	transform: scale(1.075) rotate(1deg);
-}
-.desktop-navbar-nav:active {
-	transform: scale(.95);
-}
-		
-		
 .dropdown-content {
 	display: block;
 	opacity: 0;
@@ -304,18 +303,18 @@ bold {
 	<div class="desktopheader">
 		<div class="header fadeIn">
 			<div class="logo-container"><div class="logo"><a class="logo"><img src="https://jbenedict.work/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div></div>
-			<div class="desktop-navbar-nav"><a href="#" class="desktop-navbar-button" data-url="https://jbenedict.work/portfolio" onclick="delayedRedirect(this)">THEATRE</a></div>
-				<div class="desktop-navbar-nav"><a href="#" class="desktop-navbar-button" data-url="https://jbenedict.work/photography" onclick="delayedRedirect(this)">PHOTOGRAPHY</a></div>
-				<div class="desktop-navbar-nav"><a href="#" class="desktop-navbar-button" data-url="https://jbenedict.work/contact" onclick="delayedRedirect(this)">CONTACT</a></div>
-			<div onclick="navBar()" class="navbar-nav" style="right: 50px;"><div class="navbar-button">☰</div></div>
+			<div class="navbar-nav"><a href="#" class="navbar-button" data-url="https://jbenedict.work/portfolio" onclick="delayedRedirect(this)">THEATRE</a></div>
+			<div class="navbar-nav"><a href="#" class="navbar-button" data-url="https://jbenedict.work/photography" onclick="delayedRedirect(this)">PHOTOGRAPHY</a></div>
+			<div class="navbar-nav"><a href="#" class="navbar-button" data-url="https://jbenedict.work/contact" onclick="delayedRedirect(this)">CONTACT</a></div>
+			<div onclick="navBar()" class="navbar-icon" style="right: 50px;"><div class="navbar-iconbutton">☰</div></div>
 		</div>
 	</div>
 	<div class="mobileheader">
 		<div class="header fadeIn">
 			<div class="logo-container"><div class="logo"><a class="logo"><img src="https://jbenedict.work/assets/img/favicon.png" alt="logo" style="height:50px; cursor: pointer;"></a></div></div>
-			<div class="navbar-nav" style="right: 195px;"><div class="navbar-button"><a href="https://jbenedict.work/contact"><img src="https://jbenedict.work/assets/img/mail.png" alt="Contact Pic" style="width: 36px; padding-top: 11px;"></a></div></div>
-			<div class="navbar-nav" style="right: 115px;"><div class="navbar-button"><a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 50px; padding-top: 4px;"></a></div></div>
-			<div onclick="navBar()" class="navbar-nav" style="right: 50px;"><div class="navbar-button">☰</div></div>
+			<div class="navbar-icon" style="right: 195px;"><div class="navbar-iconbutton"><a href="https://jbenedict.work/contact"><img src="https://jbenedict.work/assets/img/mail.png" alt="Contact Pic" style="width: 36px; padding-top: 11px;"></a></div></div>
+			<div class="navbar-icon" style="right: 115px;"><div class="navbar-iconbutton"><a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 50px; padding-top: 4px;"></a></div></div>
+			<div onclick="navBar()" class="navbar-icon" style="right: 50px;"><div class="navbar-iconbutton">☰</div></div>
 		</div>
 	</div>
 
