@@ -179,6 +179,11 @@ bold {
 .navbar-nav:active {
 	transform: scale(.95);
 }
+.dropdown-container {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+}
 .dropdown-content {
 	display: block;
 	opacity: 0;
@@ -279,20 +284,34 @@ bold {
 <body oncontextmenu="return false">
 	<div id="dropdownMenu" class="dropdown-content">
 		<div class="desktopheader">
-			<div class="dropdown-space"></div>
-			<div onclick="navBar()" class="dropdown-text" style="cursor: pointer;"><div class="navbar-button">✖</div></div>
-			<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/portfolio" onclick="delayedRedirect(this)">THEATRE</a></div>
-			<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/photography" onclick="delayedRedirect(this)">PHOTOGRAPHY</a></div>
-			<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/about" onclick="delayedRedirect(this)">ABOUT</a></div>
-			<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/contact" onclick="delayedRedirect(this)">CONTACT</a></div>
+			<div class="dropdown-container">
+				<div class="dropdown-space"></div>
+				<div onclick="navBar()" class="dropdown-text" style="cursor: pointer;"><div class="navbar-button">✖</div></div>
+				<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/portfolio" onclick="delayedRedirect(this)">THEATRE</a></div>
+				<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/photography" onclick="delayedRedirect(this)">PHOTOGRAPHY</a></div>
+				<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/about" onclick="delayedRedirect(this)">ABOUT</a></div>
+				<div class="dropdown-text"><a href="#" class="dropdown-text" data-url="https://jbenedict.work/contact" onclick="delayedRedirect(this)">CONTACT</a></div>
+				<br><br><div class="links">
+					<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/github.png" alt="Github Pic" style="width: 30px; padding-top: 3px;"></a>
+					<a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 35px;"></a>
+					<a href="https://www.linkedin.com/in/james-benedict-theatre" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/linkedin.png" alt="Linkedin Pic" style="width: 35px;"></a>
+				</div>
+			</div>
 		</div>
 		<div class="mobileheader">
-			<div class="dropdown-space"></div>
-			<div onclick="navBar()" class="dropdown-text" style="cursor: pointer;"><div class="navbar-button">✖</div></div>
-			<div class="dropdown-text"><a href="https://jbenedict.work/portfolio" class="dropdown-text">THEATRE</a></div>
-			<div class="dropdown-text"><a href="https://jbenedict.work/photography" class="dropdown-text">PHOTOGRAPHY</a></div>
-			<div class="dropdown-text"><a href="https://jbenedict.work/about" class="dropdown-text">ABOUT</a></div>
-			<div class="dropdown-text"><a href="https://jbenedict.work/contact" class="dropdown-text">CONTACT</a></div>
+			<div class="dropdown-container">
+				<div class="dropdown-space"></div>
+				<div onclick="navBar()" class="dropdown-text" style="cursor: pointer;"><div class="navbar-button">✖</div></div>
+				<div class="dropdown-text"><a href="https://jbenedict.work/portfolio" class="dropdown-text">THEATRE</a></div>
+				<div class="dropdown-text"><a href="https://jbenedict.work/photography" class="dropdown-text">PHOTOGRAPHY</a></div>
+				<div class="dropdown-text"><a href="https://jbenedict.work/about" class="dropdown-text">ABOUT</a></div>
+				<div class="dropdown-text"><a href="https://jbenedict.work/contact" class="dropdown-text">CONTACT</a></div>
+				<br><br><div class="links">
+					<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/github.png" alt="Github Pic" style="width: 30px; padding-top: 3px;"></a>
+					<a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 35px;"></a>
+					<a href="https://www.linkedin.com/in/james-benedict-theatre" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/linkedin.png" alt="Linkedin Pic" style="width: 35px;"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="desktopheader">
@@ -337,7 +356,6 @@ bold {
 			<a href="https://github.com/jbenedi" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/github.png" alt="Github Pic" style="width: 30px; padding-top: 3px;"></a>
             <a href="https://www.instagram.com/jbenedictwork/" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/instagram.png" alt="Instagram Pic" style="width: 35px;"></a>
             <a href="https://www.linkedin.com/in/james-benedict-theatre" target="_blank" rel="noopener noreferrer" class="footer-nav"><img src="https://jbenedict.work/assets/img/linkedin.png" alt="Linkedin Pic" style="width: 35px;"></a>
-            
         </div>
 		<div class="madeby"> James Benedict • <div style="padding-right: 4px;"></div> <span id="year"></span> </div>
     </div>
