@@ -28,17 +28,17 @@ html, body {
 	
 .portfolio {
 	display: table;
-	font-family: Source Code Pro;
+	font-family: Sofia Pro Black;
+	color: #cccccc;
 	width: 100%;
 	text-align: center;
 	margin: auto;
-	padding-top: 140px;
+	padding-top: 150px;
 }
 	
 .portfolio-box {
 	display: inline-block;
 	background-color: #13151a;
-	color: white;
 	border-radius: 5px;
 	font-size: 15px;
 	text-align: left;
@@ -84,14 +84,14 @@ html, body {
 .contactform-field {
 	width: 90%;
 	background-color: #13151a;
-	color: white;
+	color: #cccccc;
 	padding: 5px;
 	border-radius: 5px;
 	transition: all .2s linear;
 	border: rgba(255, 255, 255, .1) 2px solid;
 	margin: auto; 
 	font-size: min(max(13px, 2vw), 16px);
-	font-family: Source Code Pro;
+	font-family: Sofia Pro Black;
 }
 
 .contactform-input-group {
@@ -100,7 +100,7 @@ html, body {
 
 .contactform-submit {
 	background-color: #13151a;
-	color: white;
+	color: #cccccc;
 	padding: 10px;
 	border-radius: 5px;
 	text-align: center;
@@ -108,7 +108,7 @@ html, body {
 	border: rgba(255, 255, 255, .1) 2px solid;
 	margin: auto; 
 	font-size: min(max(13px, 2vw), 16px);
-	font-family: Source Code Pro;
+	font-family: Sofia Pro Black;
 }
 .contactform-submit:hover {
 	filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.35));
@@ -125,7 +125,6 @@ html, body {
 		width: 90%;
 		padding: 15px;
 		margin: auto;
-		color: white; 
 		font-size: min(max(14px, 4vw), 18px);
 		font-weight: 100;
 		text-align: left;
@@ -135,7 +134,6 @@ html, body {
 		width: 90%;
 		padding: 25px;
 		margin: auto;
-		color: white; 
 		font-size: min(max(14px, 4vw), 18px);
 		font-weight: 100;
 		text-align: left;
@@ -151,7 +149,6 @@ html, body {
 		width: 45%;
 		padding: 15px;
 		margin: auto;
-		color: white; 
 		font-size: min(max(14px, 4vw), 18px);
 		font-weight: 100;
 		text-align: left;
@@ -162,50 +159,12 @@ html, body {
 		width: 45%;
 		padding: 20px;
 		margin: auto;
-		color: white; 
 		font-size: min(max(14px, 4vw), 18px);
 		font-weight: 100;
 		text-align: left;
 		max-width: 500px;
 	}
 	.footer {
-		z-index: 2;
-		width: 100%;
-		height: 70px;
 		position: absolute;
-		display: table;
-		bottom: 0;
-		right: 0;
-		color: #969696;
-		font-family: Sofia Pro Black;
-		font-size: 15px;
-		border-top: rgba(255, 255, 255, .1) 1px solid;
-		background-color: #1e1e1e;
-	}
-	.footer-nav {
-		padding-left: 10px;
-		padding-right: 10px;
-		transition: all .1s linear;
-	}
-	.footer-nav:hover {
-		filter: drop-shadow(0 0 7px rgba(255, 255, 255, .35));
-		transform: scale(1.075) rotate(1deg);
-	}
-	.footer-nav:active {
-		transform: scale(.95);
-	}
-	.links {
-		display: flex;
-		text-align: center;
-		justify-content: center;
-		margin: auto;
-		padding-top: 10px;
-	}
-	.madeby {
-		display: flex;
-		text-align: center;
-		justify-content: center;
-		margin: auto;
-		padding-bottom: 10px;
 	}
 }
