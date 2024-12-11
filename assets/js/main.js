@@ -83,7 +83,5 @@ function delayedRedirect(element) {
     }, 500);
 }
 
-$(function() {
-  $("#importheader").load("https://jbenedict.work/assets/header.html");
-  $("#importfooter").load("https://jbenedict.work/assets/footer.html");
-});
+$(function(){ $("#importheader").load("https://jbenedict.work/assets/header.html"); });
+$(function(){ $("#importfooter").load("https://jbenedict.work/assets/footer.html"); });
