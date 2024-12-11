@@ -1,5 +1,3 @@
-$(function(){ $("#importheader").load("https://jbenedict.work/assets/header.html"); });
-
 window.onload = function() {
     var today = new Date();
     let year = today.getFullYear();
@@ -85,4 +83,4 @@ function delayedRedirect(element) {
     }, 500);
 }
 
-
+$(function(){ $("#importheader").load("https://jbenedict.work/assets/header.html"); });
