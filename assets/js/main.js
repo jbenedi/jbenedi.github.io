@@ -28,7 +28,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 document.onkeydown = function(e) {
     if(event.keyCode == 123) {
@@ -46,7 +46,7 @@ document.onkeydown = function(e) {
     if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
        return false;
     }
-}
+};
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -63,8 +63,8 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1;}    
+  if (n < 1) {slideIndex = slides.length;}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
