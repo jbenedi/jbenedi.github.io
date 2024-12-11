@@ -1,3 +1,5 @@
+$(function(){ $("#importheader").load("https://jbenedict.work/header.html"); });
+
 window.onload = function() {
     var today = new Date();
     let year = today.getFullYear();
