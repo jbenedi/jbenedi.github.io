@@ -1,4 +1,4 @@
-$(function(){ $("#importheader").load("https://jbenedict.work/header.html"); });
+$(function(){ $("#importheader").load("https://jbenedict.work/assets/header.html"); });
 
 window.onload = function() {
     var today = new Date();
