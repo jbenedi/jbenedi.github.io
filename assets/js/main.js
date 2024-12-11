@@ -10,13 +10,13 @@ $(document).ready(function () {
         let yearElement = document.getElementById("year");
         if (yearElement) {
             yearElement.innerHTML = year;
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
         } else {
             console.error("Year element NOT found after footer loaded!");
         }
     });
-
-    let slideIndex = 1;
-    showSlides(slideIndex);
 });
 
 function navBar() {
