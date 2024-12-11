@@ -7,16 +7,3 @@
 		</div>
 		<div class="madeby"> James Benedict • <div style="padding-right: 4px;"></div> <span id="year"></span> </div>
 	</div>
-
-	<script defer>
-	    document.addEventListener('DOMContentLoaded', function () {
-	        const today = new Date();
-	        const year = today.getFullYear();
-	        const yearElement = document.getElementById('year');
-	        if (yearElement) {
-	            yearElement.textContent = year;
-	        } else {
-	            console.error('Year element not found');
-	        }
-	    });
-	</script>
