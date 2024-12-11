@@ -17,13 +17,12 @@ $(document).ready(function () {
             console.error("Year element NOT found after footer loaded!");
         }
     });
+    var today = new Date();
+    let year = today.getFullYear();
+    let yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.innerHTML = year;
 });
-
-var today = new Date();
-let year = today.getFullYear();
-let yearElement = document.getElementById("year");
-if (yearElement) {
-    yearElement.innerHTML = year;
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -51,7 +50,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
 
 function navBar() {
     document.getElementById("dropdownMenu").classList.toggle("show");
