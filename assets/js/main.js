@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Load the header and footer
     $("#importheader").load("https://jbenedict.work/assets/header.html", function () {
         console.log("Header loaded successfully");
     });
@@ -8,7 +7,6 @@ $(document).ready(function () {
         console.log("Footer loaded successfully");
     });
 
-    // Set the current year in the footer or wherever "year" element exists
     var today = new Date();
     let year = today.getFullYear();
     let yearElement = document.getElementById("year");
@@ -19,7 +17,6 @@ $(document).ready(function () {
     }
 
     waitForSlides();
-
 });
 
 function navBar() {
