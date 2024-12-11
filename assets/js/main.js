@@ -19,6 +19,11 @@ $(document).ready(function () {
     });
 });
 
+var today = new Date();
+let year = today.getFullYear();
+let yearElement = document.getElementById("year");
+if (yearElement) {
+    yearElement.innerHTML = year;
 
 let slideIndex = 1;
 showSlides(slideIndex);
