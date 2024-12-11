@@ -5,16 +5,15 @@ $(document).ready(function () {
 
     $("#importfooter").load("https://jbenedict.work/assets/footer.html", function () {
         console.log("Footer loaded successfully");
+        var today = new Date();
+        let year = today.getFullYear();
+        let yearElement = document.getElementById("year");
+        if (yearElement) {
+            yearElement.innerHTML = year;
+        } else {
+            console.error("Year element NOT found after footer loaded!");
+        }
     });
-
-    var today = new Date();
-    let year = today.getFullYear();
-    let yearElement = document.getElementById("year");
-    if (yearElement) {
-        yearElement.innerHTML = year;
-    } else {
-        console.error("Element with ID 'year' not found in the DOM.");
-    }
 
     waitForSlides();
 });
