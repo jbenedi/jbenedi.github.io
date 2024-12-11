@@ -15,7 +15,8 @@ $(document).ready(function () {
         }
     });
 
-    waitForSlides();
+    let slideIndex = 1;
+    showSlides(slideIndex);
 });
 
 function navBar() {
@@ -33,17 +34,6 @@ window.onclick = function (event) {
         }
     }
 };
-
-function waitForSlides() {
-    const checkSlides = setInterval(() => {
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-
-        clearInterval(checkSlides);
-        let slideIndex = 1;
-        showSlides(slideIndex);
-    }, 100);
-}
 
 function plusSlides(n) {
     showSlides((slideIndex += n));
