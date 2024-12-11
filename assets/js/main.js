@@ -8,20 +8,23 @@ $(document).ready(function() {
         console.log("Footer loaded successfully");
     });
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    autoScroll();
-});
-
-window.onload = function() {
+    // Set the current year in the footer or wherever "year" element exists
     var today = new Date();
     let year = today.getFullYear();
     let yearElement = document.getElementById("year");
     if (yearElement) {
         yearElement.innerHTML = year;
+    } else {
+        console.error("Element with ID 'year' not found in the DOM.");
     }
-};
+
+    // Initialize slideshow
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Auto-scroll to the top of the page
+    autoScroll();
+});
 
 function autoScroll() {
     window.scrollTo({
@@ -59,7 +62,7 @@ function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (slides.length === 0 || dots.length === 0) return;
+    if (slides.length === 0 || dots.length === 0) return; // Guard clause if no slides or dots
 
     if (n > slides.length) {
         slideIndex = 1;
