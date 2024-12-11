@@ -39,11 +39,9 @@ function waitForSlides() {
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
 
-        if (slides.length > 0 && dots.length > 0) {
-            clearInterval(checkSlides);
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        }
+        clearInterval(checkSlides);
+        let slideIndex = 1;
+        showSlides(slideIndex);
     }, 100);
 }
 
