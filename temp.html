@@ -57,6 +57,12 @@ html, body {
 	box-sizing: border-box;
 	border-radius: 15px;
 	border: #8a0101 7px solid;
+	animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
 }
 
 .prev, .next {
@@ -94,19 +100,8 @@ html, body {
 .active, .dot:hover {
 	background-color: #595959;
 }
-
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
 	
 .portfolio {
-	display: table;
 	font-family: Source Code Pro;
 	width: 100%;
 	text-align: center;
@@ -121,28 +116,6 @@ html, body {
 	font-size: 15px;
 	text-align: left;
 	transition: all .2s linear;
-}
-	
-.portfolio-title {
-	text-align: center;
-	font-size: 40px;
-	font-family: Source Code Pro;
-	font-weight: 600;
-	color: #969696;
-}
-	
-.portfolio-title-container {
-	display: inline-block;
-}
-
-.portfolio-text-container {
-	width: 90%;
-	padding: 20px;
-	padding-right: 20px;
-	margin: auto;
-	color: white; 
-	font-size: min(max(14px, 4vw), 18px);
-	font-weight: 100;
 }
 
 .infotitle {
