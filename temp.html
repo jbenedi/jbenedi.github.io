@@ -53,9 +53,16 @@ html, body {
 }
 
 
-.slideshow-container {
+.slideshow {
 	position: relative;
 	border: 1px solid green;
+}
+
+.slideshow img {
+	width:100%;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: rgba(255, 255, 255, .1) 2px solid;
 }
 
 .prev, .next {
@@ -209,7 +216,7 @@ html, body {
 
 			<div class="portfolio-box">
                 	<br>
-                    <div class="slideshow-container">
+                    <div class="slideshow">
                     
                       <div class="mySlides fade">
                         <img src="https://jbenedict.work/assets/img/thumbnails/drfaustus.png" style="width:100%; border-radius: 15px; border: rgba(255, 255, 255, .1) 2px solid;">
