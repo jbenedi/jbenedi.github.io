@@ -36,7 +36,7 @@ html, body {
 	width:100%;
 	box-sizing: border-box;
 	border-radius: 15px;
-	border: #8a0101 0px solid;
+	border: #8a0101 5px solid;
 }
 
 .prev, .next {
@@ -84,8 +84,9 @@ html, body {
 
 .portfolio-container {
 	margin: auto;
-	width: 95%;
+	width: 90%;
 	max-width: 1100px;
+	min-width: 275px;
 	padding-top: 130px;
 	font-size: 15px;
 	text-align: left;
