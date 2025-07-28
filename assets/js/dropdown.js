@@ -5,6 +5,6 @@ const arr = ["Town Hall!townhall","Fresh Tracks!freshtracks","Little Shop of Hor
 arr.forEach(value=>{
   const words = value.split('!');
   const currentElement = document.createElement("div");
-  currentElement.innerHTML = '<div class="dropdown-text"><a href="https://jbenedict.work/portfolio/' + words[1] + '" target="_top" class="dropdown-text">' + words[0] + '</a></div>';
+  currentElement.innerHTML = '<div class="dropdown-text"><a href="https://jbenedict.com/portfolio/' + words[1] + '" target="_top" class="dropdown-text">' + words[0] + '</a></div>';
   dropdownfields.appendChild(currentElement);
 })
