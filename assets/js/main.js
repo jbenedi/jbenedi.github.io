@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $("#importheader").load("https://jbenedict.work/assets/header.html", function () {
+    $("#importheader").load("https://jbenedict.com/assets/header.html", function () {
         console.log("Header loaded successfully");
     });
 
-    $("#importfooter").load("https://jbenedict.work/assets/footer.html", function () {
+    $("#importfooter").load("https://jbenedict.com/assets/footer.html", function () {
         console.log("Footer loaded successfully");
         var today = new Date();
         let year = today.getFullYear();
