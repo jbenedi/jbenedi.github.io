@@ -34,7 +34,7 @@ html {
 bold {
 	color: #a30b00;
 }
-@media only screen and (max-device-width: 650px) {
+@media only screen and (max-device-width: 800px) {
 	.desktopheader {
 		visibility: hidden;
 	}
@@ -42,7 +42,7 @@ bold {
 		visibility: hidden;
 	}
 }
-@media only screen and (min-device-width: 651px) {
+@media only screen and (min-device-width: 801px) {
 	.mobileheader {
 		visibility: hidden;
 	}
