@@ -13,7 +13,7 @@
 	<link rel="icon" type="image/png" href="https://jbenedict.com/assets/img/favicon.png">
 	<meta name="description" content="James - Lighting Designer, Coder, Techie" />
 	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/main.css">
-	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/portfolioshow.css">
+	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/show.css">
 </head>
 
 <body oncontextmenu="return false">
@@ -22,65 +22,70 @@
 	<div class="scrollable">
 		<div class="portfolio">
 
-			<div class="portfolio-container">
-				<div class="slideshow">
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/thumbnail.svg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/1.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/3.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/4.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/6.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/7.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/9.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/10.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/11.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/12.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/13.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/2.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/5.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/8.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/headoverheels/14.jpg"></div>
-					<a class="prev" onclick="plusSlides(-1)">❮</a>
-					<a class="next" onclick="plusSlides(1)">❯</a>
-				</div>
-				<div style="text-align:center; padding: 16px 0 10px;">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>
-					<span class="dot" onclick="currentSlide(5)"></span>
-					<span class="dot" onclick="currentSlide(6)"></span>
-					<span class="dot" onclick="currentSlide(7)"></span>
-					<span class="dot" onclick="currentSlide(8)"></span>
-					<span class="dot" onclick="currentSlide(9)"></span>
-					<span class="dot" onclick="currentSlide(10)"></span>
-					<span class="dot" onclick="currentSlide(11)"></span>
-					<span class="dot" onclick="currentSlide(12)"></span>
-					<span class="dot" onclick="currentSlide(13)"></span>
-					<span class="dot" onclick="currentSlide(14)"></span>
-					<span class="dot" onclick="currentSlide(15)"></span>
-				</div>
+			<div class="thumbnail-container">
+				<img src="https://jbenedict.com/portfolio/headoverheels/thumbnail.svg" class="thumbnail">
 			</div>
-            
 			<hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
-			<div class="meta">Spring 2025</div>
-			<div class="descriptiontitle">
-				<div class="infotitle">HEAD OVER HEELS</div>
-				<div style="font-weight: 300">Salisbury University</div><br>
-				<div style="font-weight: 600">Lighting Designer</div><br>
-			</div>
-			<div class="description">
-				Director: Blake Harris
-				<br><br>Lighting Designer: James Benedict
-				<br><br>Scenic Designer: John Raley
-				<br><br>Sound Designer: Justin Schmitz
-				<br><br>Costume Designer: Karen Boyer
-				<br><br>Musical Director: Bill Folger
-			</div>
-			<div class="description">
-				<a href="https://drive.google.com/drive/folders/1YCVU7JFGxckyHQTrvMJKi5hY45EuAZBm?usp=sharing" target="_blank"><img src="https://jbenedict.com/assets/img/paperwork.jpg" style="width:80%; border-radius:15px;"></a>
-				<a href="https://drive.google.com/file/d/1SWPtE7Tyv0GWy8FaeLyiNTTlsokJWz7e/view?usp=sharing" target="_blank"><img src="https://jbenedict.com/assets/img/research.jpg" style="width:80%; border-radius:15px;"></a>
+			
+			<!--Spring 2025-->
+			<div class="text">
+				<div class="grid">
+					<div class="infotitle">HEAD OVER HEELS</div>
+					<div style="font-weight: 300">Salisbury University</div><br>
+					<div style="font-weight: 600">Lighting Designer</div><br>
+					<div style="font-weight: 600; font-size: 2.5rem">↓</div>
+				</div>
+				<div class="grid">
+					Director: Blake Harris
+					<br><br>Scenic: John Raley
+					<br><br>Sound: Justin Schmitz
+					<br><br>Costumes: Karen Boyer
+					<br><br>Music: Bill Folger
+				</div>
 			</div>
 			
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/1.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/3.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/4.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/6.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/7.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/9.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/10.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/11.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/12.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/13.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/2.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/5.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/8.jpg" style="width:100%">
+			</div>
+			<div class="grid">
+				<img src="https://jbenedict.com/portfolio/headoverheels/14.jpg" style="width:100%">
+			</div>
 			
 			<div id="particles-js" style="width: 100%; height: 100vh; z-index: -1; position: absolute; top: 0px; overflow: hidden;"></div>
 			<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
