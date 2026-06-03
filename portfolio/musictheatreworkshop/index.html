@@ -13,8 +13,14 @@
 	<link rel="icon" type="image/png" href="https://jbenedict.com/assets/img/favicon.png">
 	<meta name="description" content="James - Lighting Designer, Coder, Techie" />
 	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/main.css">
-	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/portfoliopage.css">
+	<link rel="stylesheet" media="screen" href="https://jbenedict.com/assets/css/show.css">
 </head>
+
+<style>
+	.thumbnail {
+		object-position: 0% 10%;
+	}
+</style>
 
 <body oncontextmenu="return false">
 	
@@ -22,43 +28,32 @@
 	<div class="scrollable">
 		<div class="portfolio">
 
-			<div class="portfolio-container">
-				<div class="slideshow">
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/thumbnail.svg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/1.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/2.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/3.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/4.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/5.jpg"></div>
-					<div class="mySlides fade"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/6.jpg"></div>
-					<a class="prev" onclick="plusSlides(-1)">❮</a>
-					<a class="next" onclick="plusSlides(1)">❯</a>
+			<div class="thumbnail-container">
+				<img src="https://jbenedict.com/portfolio/musictheatreworkshop/thumbnail.svg" class="thumbnail">
+			</div>
+			<br><hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
+			
+			<!--Fall 2023-->
+			<div class="text">
+				<div class="grid">
+					<div class="infotitle">MUSICAL THEATRE WORKSHOP</div>
+					<div style="font-weight: 300">Salisbury University</div><br>
+					<div style="font-weight: 600">Lighting Designer</div><br>
+					<div style="font-weight: 600; font-size: 2.5rem">↓</div>
 				</div>
-				<div style="text-align:center; padding: 16px 0 10px;">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>
-					<span class="dot" onclick="currentSlide(5)"></span>
-					<span class="dot" onclick="currentSlide(6)"></span>
-					<span class="dot" onclick="currentSlide(7)"></span>
+				<div class="grid">
+					Director: Blake Harris
+					<br><br>Music: William Folger
+					<br><br>Scenic: Michael Desper
 				</div>
 			</div>
-            
-			<hr style="width:65%; border: solid 1px #969696; max-width: 450px;">
-			<div class="meta">Fall 2023</div>
-			<div class="description">
-				<div class="infotitle">MUSICAL THEATRE WORKSHOP</div>
-				<div style="font-weight: 300">Salisbury University</div><br>
-				<div style="font-weight: 600">Lighting Designer</div><br>
-				Final presentation for the university’s musical theatre course, consisting of twenty five individual pieces, each supported by original lighting design.<br>
-			</div>
-			<div class="description">
-				Director: Blake Harris
-				<br><br>Musical Director: William Folger
-				<br><br>Set Director: Michael Desper
-				<br><br>Lighting Designer: James Benedict
-			</div>
+			
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/1.jpg" style="width:100%"></div>
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/2.jpg" style="width:100%"></div>
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/3.jpg" style="width:100%"></div>
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/4.jpg" style="width:100%"></div>
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/5.jpg" style="width:100%"></div>
+			<div class="grid"><img src="https://jbenedict.com/portfolio/musictheatreworkshop/6.jpg" style="width:100%"></div>
 			
 			<div id="particles-js" style="width: 100%; height: 100vh; z-index: -1; position: absolute; top: 0px; overflow: hidden;"></div>
 			<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
