@@ -97,6 +97,7 @@ html, body {
 		width: 70%;
 		margin: auto;
 		padding: 20px;
+		padding-bottom: 30px;
 		min-width: 675px;
 		max-width: 1300px;
 		font-size: min(max(14px, 4vw), 18px);
