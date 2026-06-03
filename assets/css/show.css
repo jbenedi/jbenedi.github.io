@@ -26,24 +26,6 @@ html, body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-
-.thumbnail {
-	width:100%;
-	box-sizing: border-box;
-	border-radius: 10px;
-	border: #8a0101 5px solid;
-}
-
-.thumbnail-container {
-	margin: auto;
-	width: 80%;
-	max-width: 1300px;
-	min-width: 275px;
-	padding-top: 130px;
-	padding-bottom: 20px;
-	font-size: 15px;
-	transition: all .2s linear;
-}
 	
 .portfolio {
 	font-family: Source Code Pro;
@@ -54,6 +36,16 @@ html, body {
 
 @media only screen and (max-device-width:750px) {
 	/* MOBILE */
+	.thumbnail {
+		width:100%;
+		box-sizing: border-box;
+		border-radius: 10px;
+		border: #8a0101 5px solid;
+		width: 95%;
+		height: 40vw;
+		object-fit: cover;
+		margin-top: 130px;
+	}
 	.grid {
 		display: inline-block;
 		width: 90%;
@@ -81,6 +73,16 @@ html, body {
 
 @media only screen and (min-device-width:751px) {
 	/* PC */
+	.thumbnail {
+		width:100%;
+		box-sizing: border-box;
+		border-radius: 10px;
+		border: #8a0101 5px solid;
+		width: 90%;
+		height: 25vw;
+		object-fit: cover;
+		margin-top: 130px;
+	}
 	.grid {
 		display: inline-block;
 		width: 50%;
